@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Green Tip</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 0; padding: 2rem; display: flex; flex-direction: column; align-items: center; justify-content: center; background: #f0fff0; }
+    h1 { color: #2e7d32; }
+    #tip { font-size: 1.5rem; margin-top: 1rem; }
+  </style>
+</head>
+<body>
+  <h1>🌱 Your Green Living Tip</h1>
+  <p id="tip"></p>
+  <script>
+    const tips = ["Turn off lights when you leave a room.", "Unplug devices when not in use.", "Take shorter showers to save water.", "Use a reusable water bottle.", "Recycle paper, plastic, and metal.", "Eat more plant-based meals.", "Bike or walk instead of driving when possible.", "Compost your food scraps."];
+    const randomIndex = Math.floor(Math.random() * tips.length);
+    document.getElementById("tip").innerText = tips[randomIndex];
+  </script>
+</body>
+</html>
